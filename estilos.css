@@ -1,0 +1,165 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+    display: flex;
+	gap: 20px;
+
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	width: 70%;
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card .textos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	width: 30%;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner ul {
+	list-style: none;
+	padding: 20px 0;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px) {
+	.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	justify-items: center;
+    
+	/*Grid*/
+	 display: grid;
+	 grid-template-columns: 1fr ;
+	 gap: 20px;
+}
+	.contenedor-conciertos {
+	justify-self: center;
+    text-align: center;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+		
+}
+.banner {
+	min-height: 150px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	width: 75%;
+    
+	/*Flexbox*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+	
+}
+@media screen and (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+		/*Grid*/
+        display: grid;
+        grid-template-columns: 1fr;
+		justify-items: center;
+        gap: 20px;
+    }
+    
+    .contenedor-conciertos {
+		justify-self: center;
+    	text-align: center;
+        /*Grid*/
+        display: grid;
+        grid-template-columns: 1fr;
+		
+    }
+    
+    .banner {
+        min-height: 200px; 
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        
+        /* Flexbox */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
